@@ -111,6 +111,12 @@ body {
   line-height: 1.5;
 }
 
+.container ul {
+  margin: 0;
+  padding-left: 18px;
+  line-height: 1.5;
+}
+
 .container a {
   align-self: flex-start;
   text-decoration: none;
