@@ -1,103 +1,237 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head class=" ">
-    <link rel="stylesheet" href="landingpagestyle.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="page1" id="hero">
-      <div class="left">
-        <header>
-          <div class="header-left">
-            <h1 class="logo">Devadath LV</h1>
-            <nav class="navigation">
-              <a href="#hero">Home</a>
-              <a href="#about">About</a>
-              <a href="project.html">Projects</a>
-              <a href="#Education">Education</a>
-              <a href="#contact">Contact</a>
-            </nav>
-          </div>
-          <a class="resume-button" href="resume.pdf" target="_blank" rel="noopener">
-            Resume
-          </a>
-        </header>
-        <div class="left-content">
-          <div class="inner_left">
-            <h3 class="iam">Hey I'm</h3>
-            <h2 class="big-name">Devadath LV</h2>
-            <h4 class="position">BCA Student, Full Satck Developer</h4>
-          </div>
-        </div>
-      </div>
-      <div class="right">
-        <img
-          src="me.jpeg"
-          alt="Devadath LV"
-          style="
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-            border: 0;
-          "
-        />
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devadath LV - Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Devadath LV, BCA Student and Full Stack Developer.">
+  <meta property="og:title" content="Devadath LV - Portfolio">
+  <meta property="og:description" content="Portfolio of Devadath LV, BCA Student and Full Stack Developer.">
+  <meta property="og:image" content="me.jpeg">
+  <meta property="og:type" content="website">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#home" class="logo">Devadath LV</a>
+      <nav class="site-nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <a href="resume.pdf" class="btn btn-outline" target="_blank" rel="noopener">Resume</a>
     </div>
+  </header>
 
-    <div id="about" class="About">
-      <h1>About me</h1>
-      <p class="alignp">
-        Hello! I am Devadath LV, a passionate BCA student and full-stack
-        developer. I have a strong interest in web development and programming,
-        and I am constantly seeking opportunities to learn and grow in this
-        field. With a solid foundation in computer science and hands-on
-        experience in various programming languages, I am dedicated to creating
-        innovative solutions and contributing to the tech community.
-      </p>
-    </div>
-    <div class="Education section-block" id="Education">
-      <h1>Education</h1>
-      <p class="alignp">
-        I am currently pursuing my BCA degree with a focus on computer
-        applications, programming, and software development. Alongside my
-        studies, I keep building projects to strengthen my practical knowledge
-        and problem-solving skills.
-      </p>
-      <div class="skills-section">
-        <h2>Skills</h2>
-        <div class="skills-list">
-          <span class="skill-item">HTML</span>
-          <span class="skill-item">CSS</span>
-          <span class="skill-item">Python</span>
-          <span class="skill-item">Java</span>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="tagline fade-up delay-1">Hey I'm</p>
+          <h1 class="hero-title fade-up delay-2">Devadath LV</h1>
+          <h2 class="hero-subtitle fade-up delay-3">BCA Student, Full Stack Developer</h2>
+          <div class="hero-actions fade-up delay-4">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper fade-up delay-5">
+          <img src="me.jpeg" alt="Devadath LV" class="hero-image">
         </div>
       </div>
-    </div>
-    <div class="Contact section-block" id="contact">
-      <h1>Contact</h1>
-      <p class="alignp">
-        I am always open to connecting about internships, projects, and
-        collaborative opportunities. You can reach me for web development work,
-        student collaborations, or tech discussions as I continue growing in
-        the software field.
-      </p>
-      <form class="contact-form" action="#" method="post">
-        <div class="form-row">
-          <input type="text" name="name" placeholder="Your name" required />
-          <input type="email" name="email" placeholder="Your email" required />
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-container reveal">
+        <h2 class="section-title">About me</h2>
+        <div class="section-content">
+          <p class="lead">
+            Hello! I am Devadath LV, a passionate BCA student and full-stack
+            developer. I have a strong interest in web development and programming,
+            and I am constantly seeking opportunities to learn and grow in this
+            field. With a solid foundation in computer science and hands-on
+            experience in various programming languages, I am dedicated to creating
+            innovative solutions and contributing to the tech community.
+          </p>
         </div>
-        <input type="text" name="subject" placeholder="Subject" required />
-        <textarea
-          name="message"
-          rows="6"
-          placeholder="Write your message here"
-          required
-        ></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-container reveal">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+          
+          <article class="project-card">
+            <div class="project-image">
+              <img src="me.jpeg" alt="Personal Website">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <ul class="tech-stack">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <h3 class="project-title">Personal Website</h3>
+              <p class="project-desc">A responsive personal website built with HTML, CSS, and JavaScript.</p>
+              <a href="https://devadxthlv.github.io/personal-website/" target="_blank" class="project-link" rel="noopener noreferrer">View Project &rarr;</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="Screenshot 2026-04-14 104444.png" alt="Fintech Landing Page">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <ul class="tech-stack">
+                <li>Bootstrap</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <h3 class="project-title">Responsive Fintech Landing Page</h3>
+              <p class="project-desc">Built a Responsive Fintech Landing Page with Bootstrap.</p>
+              <a href="https://devadxthlv.github.io/taskapril10/" target="_blank" class="project-link" rel="noopener noreferrer">View Project &rarr;</a>
+            </div>
+          </article>
+          
+          <article class="project-card">
+            <div class="project-image">
+              <img src="img_avatar.png" alt="Project 3" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22600%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1%20text%20%7B%20fill%3A%23f5f0e8%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A30pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1%22%3E%3Crect%20width%3D%22600%22%20height%3D%22400%22%20fill%3D%22%23222%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22200%22%20y%3D%22210%22%3EProject%203%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E'">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <ul class="tech-stack">
+                <li>Web</li>
+                <li>Design</li>
+              </ul>
+              <h3 class="project-title">Project 3</h3>
+              <p class="project-desc">Upcoming project detailing web development and design.</p>
+              <a href="#" class="project-link">View Project &rarr;</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="img_avatar.png" alt="Project 4" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22600%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1%20text%20%7B%20fill%3A%23f5f0e8%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A30pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1%22%3E%3Crect%20width%3D%22600%22%20height%3D%22400%22%20fill%3D%22%23222%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22200%22%20y%3D%22210%22%3EProject%204%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E'">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <ul class="tech-stack">
+                <li>Web</li>
+                <li>Design</li>
+              </ul>
+              <h3 class="project-title">Project 4</h3>
+              <p class="project-desc">Upcoming project detailing web development and design.</p>
+              <a href="#" class="project-link">View Project &rarr;</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="img_avatar.png" alt="Project 5" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22600%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1%20text%20%7B%20fill%3A%23f5f0e8%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A30pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1%22%3E%3Crect%20width%3D%22600%22%20height%3D%22400%22%20fill%3D%22%23222%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22200%22%20y%3D%22210%22%3EProject%205%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E'">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <ul class="tech-stack">
+                <li>Web</li>
+                <li>Design</li>
+              </ul>
+              <h3 class="project-title">Project 5</h3>
+              <p class="project-desc">Upcoming project detailing web development and design.</p>
+              <a href="#" class="project-link">View Project &rarr;</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="img_avatar.png" alt="Project 6" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22600%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1%20text%20%7B%20fill%3A%23f5f0e8%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A30pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1%22%3E%3Crect%20width%3D%22600%22%20height%3D%22400%22%20fill%3D%22%23222%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22200%22%20y%3D%22210%22%3EProject%206%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E'">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <ul class="tech-stack">
+                <li>Web</li>
+                <li>Design</li>
+              </ul>
+              <h3 class="project-title">Project 6</h3>
+              <p class="project-desc">Upcoming project detailing web development and design.</p>
+              <a href="#" class="project-link">View Project &rarr;</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="section-container reveal">
+        <h2 class="section-title">Education</h2>
+        <div class="section-content two-columns">
+          <div class="edu-info">
+            <p class="lead" style="margin-bottom: var(--spacing-3);">
+              I am currently pursuing my BCA degree with a focus on computer
+              applications, programming, and software development. Alongside my
+              studies, I keep building projects to strengthen my practical knowledge
+              and problem-solving skills.
+            </p>
+          </div>
+          <div class="skills-info">
+            <h3 style="margin-bottom: var(--spacing-3); font-size: 2rem;">Skills</h3>
+            <div class="skills-list">
+              <span class="skill-item">HTML</span>
+              <span class="skill-item">CSS</span>
+              <span class="skill-item">Python</span>
+              <span class="skill-item">Java</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-container reveal">
+        <h2 class="section-title">Contact</h2>
+        <div class="section-content contact-layout">
+          <div class="contact-text">
+            <p class="lead">
+              I am always open to connecting about internships, projects, and
+              collaborative opportunities. You can reach me for web development work,
+              student collaborations, or tech discussions as I continue growing in
+              the software field.
+            </p>
+          </div>
+          <div class="contact-form-wrapper">
+            <form class="contact-form" action="#" method="post">
+              <div class="form-row">
+                <input type="text" name="name" placeholder="Your name" required aria-label="Your Name">
+                <input type="email" name="email" placeholder="Your email" required aria-label="Your Email">
+              </div>
+              <input type="text" name="subject" placeholder="Subject" required aria-label="Subject">
+              <textarea name="message" rows="6" placeholder="Write your message here" required aria-label="Message"></textarea>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>&copy; <span id="year"></span> Devadath LV. All rights reserved.</p>
+      <a href="#home" class="back-to-top">Back to top &uarr;</a>
     </div>
-  </body>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
